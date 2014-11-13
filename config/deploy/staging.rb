@@ -3,9 +3,9 @@
 ############################################
 
 set :stage, :staging
-set :stage_url, "http://www.example.com"
-server "XXX.XXX.XX.XXX", user: "SSHUSER", roles: %w{web app db}
-set :deploy_to, "/deploy/to/path"
+set :stage_url, "http://localhost"
+server "localhost", user: "haracane", roles: %w{web app db}
+set :deploy_to, "/Users/haracane/public_html/wp-deploy-sample.staging"
 
 ############################################
 # Setup Git
